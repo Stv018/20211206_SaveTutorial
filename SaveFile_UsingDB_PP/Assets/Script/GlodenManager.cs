@@ -22,13 +22,16 @@ namespace Ce1206
         public LayerMask layerTarget;
         [Header("金幣數量")]
         public Text Txtcoin;
+
+        [HideInInspector] //屬性面板上隱藏
+        public int goldCnt;
         #endregion
 
         /// <summary>
         /// 數金礦用
         /// </summary>
         #region 欄位：私人
-        private int goldcnt;
+
         #endregion
 
         #region 屬性：私人
@@ -64,14 +67,21 @@ namespace Ce1206
         {
             if (InputGold && TargetInRadius)
             {
-                goldcnt++;
-                Txtcoin.text = "金幣數量：" + goldcnt;
+                goldCnt++;
+                Txtcoin.text = "金幣數量：" + goldCnt;
             }
         }
 
-
         #endregion
 
+        /// <summary>
+        /// 用以讀取用
+        /// </summary>
+        public void UpdateData() 
+        {
+            Txtcoin.text = "金幣數量：" + goldCnt;
+
+        }
 
         void Start()
         {

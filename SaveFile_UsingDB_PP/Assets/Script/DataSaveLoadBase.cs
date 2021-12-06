@@ -9,11 +9,18 @@ namespace Ce1206
     /// </summary>
     public class DataSaveLoadBase : MonoBehaviour
     {
+
+        [Header("要儲存的資料")]
+        public GlodenManager glodenManager;
+        public Transform playerPos;
+
         #region 方法 公開並允許複寫
 
         /// <summary>
         /// 儲存資料
         /// </summary>
+        /// 
+
         public virtual void SaveData()
         {
 
