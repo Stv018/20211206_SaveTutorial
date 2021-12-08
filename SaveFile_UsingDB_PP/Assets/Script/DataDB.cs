@@ -12,7 +12,7 @@ namespace Ce1206
     public class DataDB : DataSaveLoadBase
     {
  
-        private string urlsave = "https://ce777.000webhostapp.com/save.php";
+        private string urlsave = "https://ce777.000webhostapp.com/Save.php";
         private WWWForm form;
 
         public override void SaveData()
@@ -21,6 +21,9 @@ namespace Ce1206
 
             form = new WWWForm();       //新增 表單物件
             form.AddField("coin", glodenManager.goldCnt);  //表單添加金幣欄位與值
+            form.AddField("posX", playerPos.position.x.ToString());  //表單添加金幣欄位與值
+            form.AddField("posY", playerPos.position.y.ToString());  //表單添加金幣欄位與值
+            
             StartCoroutine(StartSaveData());               //啟動儲存資料
         }
 
