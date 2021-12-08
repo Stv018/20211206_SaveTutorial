@@ -19,7 +19,7 @@ namespace Ce1206
         public override void SaveData()
         {
             base.SaveData();
-            PlayerPrefs.SetInt(keyGold, glodenManager.goldCnt);
+            PlayerPrefs.SetInt(keyGold, goldenManager.goldCnt);
             PlayerPrefs.SetFloat(keyPl_Posx, playerPos.position.x);
             PlayerPrefs.SetFloat(keyPl_Posy, playerPos.position.y);
         }
@@ -29,13 +29,13 @@ namespace Ce1206
 
             #region 讀取資料
             Vector3 posLoad =Vector3.zero;
-            glodenManager.goldCnt = PlayerPrefs.GetInt(keyGold);
+            goldenManager.goldCnt = PlayerPrefs.GetInt(keyGold);
             posLoad.x = PlayerPrefs.GetInt(keyPl_Posx);
             posLoad.y = PlayerPrefs.GetFloat(keyPl_Posy);
             #endregion
 
             #region 更新物件
-            glodenManager.UpdateData();
+            goldenManager.UpdateData();
             playerPos.position = posLoad;
             #endregion
         }

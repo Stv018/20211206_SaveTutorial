@@ -20,7 +20,7 @@ namespace Ce1206
             base.SaveData();
 
             form = new WWWForm();       //新增 表單物件
-            form.AddField("coin", glodenManager.goldCnt);  //表單添加金幣欄位與值
+            form.AddField("coin", goldenManager.goldCnt);  //表單添加金幣欄位與值
             form.AddField("posX", playerPos.position.x.ToString());  //表單添加金幣欄位與值
             form.AddField("posY", playerPos.position.y.ToString());  //表單添加金幣欄位與值
             

@@ -207,7 +207,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 358001966}
-        m_TargetAssemblyTypeName: Ce1206.DataGas, Assembly-CSharp
+        m_TargetAssemblyTypeName: Ce1206.DataUseGas, Assembly-CSharp
         m_MethodName: SaveData
         m_Mode: 1
         m_Arguments:
@@ -282,10 +282,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 358001965}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ca6747bdba8fb674ca911e4fa08f06b4, type: 3}
+  m_Script: {fileID: 11500000, guid: d45ed4ddc68585f4fa210389f0b03df1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  glodenManager: {fileID: 1042337781}
+  goldenManager: {fileID: 1042337781}
   playerPos: {fileID: 1408294987}
 --- !u!4 &358001967
 Transform:
@@ -464,7 +464,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 358001966}
-        m_TargetAssemblyTypeName: Ce1206.DataGas, Assembly-CSharp
+        m_TargetAssemblyTypeName: Ce1206.DataUseGas, Assembly-CSharp
         m_MethodName: LoadData
         m_Mode: 1
         m_Arguments:

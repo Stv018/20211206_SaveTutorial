@@ -11,7 +11,7 @@ namespace Ce1206
     {
 
         [Header("要儲存的資料")]
-        public GlodenManager glodenManager;
+        public GlodenManager goldenManager;
         public Transform playerPos;
 
         #region 方法 公開並允許複寫
