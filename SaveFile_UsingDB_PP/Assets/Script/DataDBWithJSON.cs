@@ -61,7 +61,6 @@ namespace Ce1206
                 print("傳輸狀態:" + www.isDone);
                 result = www.downloadHandler.text;
                 //print("傳輸結果:" + result);                //傳輸結果
-
             }
 
             if (load) 
