@@ -14,7 +14,7 @@ namespace Ce1206
  
         private string urlsave = "https://ce777.000webhostapp.com/Save.php";
         private WWWForm form;
-
+       // private GlodenManager Gloden;
         public override void SaveData()
         {
             base.SaveData();
@@ -44,7 +44,5 @@ namespace Ce1206
             }
         
         }
-
-
     }
 }

@@ -13,7 +13,7 @@ namespace Ce1206
         /// GAS檔名連結 檔名為.exec
         /// </summary>
 
-        private string gas = "https://script.google.com/macros/s/AKfycbwEcd-qBPSrDEoPS7TaxrEc46SguSPNFmjLzSayUgQDrGuJ2q9NUZj_V_0tEA51DuX4/exec";
+        private string gas = "https://script.google.com/macros/s/AKfycbxGKHJYUJ1xgrw572OHsUEyayFHEqrQdb35Xdef3jGG1EUvmIyfddlLiCvWVvPBDDyB/exec";
         private WWWForm form;
         private string result;
      
@@ -24,7 +24,7 @@ namespace Ce1206
             #region 儲存資料
             form = new WWWForm();
             form.AddField("coin", goldenManager.goldCnt);
-            //print(goldenManager.goldCnt);
+           
             form.AddField("posX", playerPos.position.x.ToString());
             form.AddField("posY", playerPos.position.y.ToString());
 
@@ -72,13 +72,13 @@ namespace Ce1206
             else if (update == "座標 X")
             {
                 float x = Convert.ToSingle(result);
-                playerPos.position = new Vector3(x, playerPos.position.y, 0);
+                playerPos.position = new Vector3(x, playerPos.position.y , 0);
             }
 
             else if (update == "座標 Y")
             {
                 float y = Convert.ToSingle(result);
-                playerPos.position = new Vector3(playerPos.position.x,y, 0);
+                playerPos.position = new Vector3(playerPos.position.x, y , 0);
             }
            /* form.AddField("row", 2);
             form.AddField("col", 2);
@@ -108,7 +108,7 @@ namespace Ce1206
                 //載入畫面 0~1 可以做讀取進度條
                 //www.downloadProgress
                 result = www.downloadHandler.text;
-                print(result);   ///???
+              //  print(result);   ///爛表單 換新的
             }
 
 

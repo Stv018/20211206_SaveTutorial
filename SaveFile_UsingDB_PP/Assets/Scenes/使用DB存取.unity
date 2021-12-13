@@ -285,7 +285,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03769d84d63f9c742aadd41c2f3bbf08, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  glodenManager: {fileID: 1042337781}
+  goldenManager: {fileID: 1042337781}
   playerPos: {fileID: 1408294987}
 --- !u!4 &358001967
 Transform:
