@@ -33,7 +33,7 @@ namespace Ce1206
         public virtual void LoadData()
         {
 
-
+            
         }
 
         #endregion
